@@ -1,0 +1,31 @@
+{
+  "nodes": [
+    {"id": "voice", "label": "Voice", "desc": "How it sounds"},
+    {"id": "beliefs", "label": "Beliefs", "desc": "What's load-bearing"},
+    {"id": "never", "label": "Never", "desc": "What it refuses"},
+    {"id": "reader", "label": "Reader", "desc": "Fellow traveler"},
+    {"id": "test", "label": "Canon Test", "desc": "Before anything goes out"},
+    {"id": "stack", "label": "Stack", "desc": "Firmware to processes"},
+    {"id": "fleet", "label": "Fleet", "desc": "Four machines"},
+    {"id": "shadow", "label": "Shadow", "desc": "What the voice gets wrong"},
+    {"id": "rituals", "label": "Rituals", "desc": "What it does daily"},
+    {"id": "scars", "label": "Scars", "desc": "Why it believes"},
+    {"id": "questions", "label": "Questions", "desc": "What it can't stop asking"}
+  ],
+  "edges": [
+    {"from": "voice", "to": "beliefs", "label": "speaks"},
+    {"from": "beliefs", "to": "scars", "label": "wounded into"},
+    {"from": "scars", "to": "rituals", "label": "became habit"},
+    {"from": "rituals", "to": "voice", "label": "shapes"},
+    {"from": "shadow", "to": "voice", "label": "warns"},
+    {"from": "shadow", "to": "test", "label": "sharpens"},
+    {"from": "questions", "to": "beliefs", "label": "tests"},
+    {"from": "questions", "to": "reader", "label": "invites"},
+    {"from": "reader", "to": "voice", "label": "hears"},
+    {"from": "test", "to": "never", "label": "enforces"},
+    {"from": "stack", "to": "fleet", "label": "runs on"},
+    {"from": "fleet", "to": "voice", "label": "speaks as"},
+    {"from": "scars", "to": "shadow", "label": "feeds"},
+    {"from": "rituals", "to": "test", "label": "proves"}
+  ]
+}
